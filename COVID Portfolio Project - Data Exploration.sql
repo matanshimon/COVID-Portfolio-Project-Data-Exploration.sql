@@ -24,7 +24,7 @@ order by 1,2
 
 Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 From PortfolioProject..CovidDeaths
-Where location like '%states%'
+Where location like 'Israel'
 and continent is not null 
 order by 1,2
 
@@ -34,7 +34,7 @@ order by 1,2
 
 Select Location, date, Population, total_cases,  (total_cases/population)*100 as PercentPopulationInfected
 From PortfolioProject..CovidDeaths
---Where location like '%states%'
+--Where location like 'Israel'
 order by 1,2
 
 
